@@ -1,0 +1,113 @@
+- _id: file://localhost/home/blake/Projects/dailyrentalads/tests/html/usedvictoria/no_fields_discard.html
+  baths: null
+  beds: null
+  description: 'BE MY GUEST IN BC
+
+    Due to ever-increasing demand, we are looking for more rental units to offer our
+    substantial client base.
+
+    If you own a fully furnished property in the Victoria area we have guests looking
+    to rent for short term, mid term and even longer terms of six months or less.
+
+    We cater to Corporate Stays, Executive Rentals, Emergency Housing (Insurance claims,)
+    Vacation Rentals and Longer Term Visits. We attract clients looking to move to
+    Vancouver Island who want to rent for a few months while they look for their forever
+    home.
+
+    With our extensive network of advertising and referrals we find clients worldwide
+    who will pay premium prices for short term stays or just great holidays of a week
+    or more.
+
+    We manage all your property expenses for you, ensure maintenance is always done
+    and keep your place ship shape. We handle all guest interaction, cleaning between
+    guests and ongoing maid service during stays.
+
+    Best of all, we charge a percentage of rentals, no rentals, no charges.
+
+    You pay nothing if your property is not rented.
+
+    We provide detailed monthly income and service reports, prompt payments and reviews
+    to maximize your property''s potential.
+
+    If you wish to visit your property for a week or so, simply give us appropriate
+    notice and we will block off time for you to also enjoy your own property.
+
+    With over 40 years property management experience, our professional team will
+    provide you with peace of mind and great income also.
+
+    Call Don now at 778 244 7840 to discuss how we can make your vacant property generate
+    above average revenue for you.
+
+
+    PS: If your property is not fully furnished we have furnishing packages available
+    to make your empty house or condo into a palace.
+
+
+
+    '
+  pets: null
+  price: null
+  smoking: null
+  title: BE MY GUEST IN BC
+  url: file://localhost/home/blake/Projects/dailyrentalads/tests/html/usedvictoria/no_fields_discard.html
+  wanted: false
+- _id: file://localhost/home/blake/Projects/dailyrentalads/tests/html/usedvictoria/wanted.html
+  baths: null
+  beds: '3'
+  description: 'Hi, my name is Dylan.  My lovely little family has outgrown our current
+    rental suite and we are looking for a bit more space to grow.  Ideally would be
+    looking for something with 3 bedrooms that is sound proof from other tenants.  Just
+    looking for a nice place where we can raise our daughter in peace and live happily.  Preferred
+    location would be in Esquimalt, View Royal, or Tillicum neighborhood, but not
+    entirely limited to any area.  Please contact me if you feel we would be a good
+    fit for your suite.
+
+
+    Thanks for your time'
+  pets: true
+  price: null
+  smoking: null
+  title: Quiet 3 bedroom suite  for small family of 3
+  url: file://localhost/home/blake/Projects/dailyrentalads/tests/html/usedvictoria/wanted.html
+  wanted: true
+- _id: file://localhost/home/blake/Projects/dailyrentalads/tests/html/usedvictoria/well_formed.html
+  baths: '1'
+  beds: '1'
+  description: "Quiet 1 bdm, on quiet side of the building\n- Walk to downtown, quiet\
+    \ area near Fort and Cook Street.\n- \"Walkscore\" of 93. \"Bike Score\" 100\n\
+    - Enjoy shops and local stores in Cook Street Village nearby.\n- Renovated (new\
+    \ kitchen, dishwasher)\n- Large pantry storage room next to kitchen\n- 24 hour\
+    \ on-site management\n- On bus routes 2,8,14,15\n- Common Laundry room on 2nd\
+    \ floor\n- Heat & Hot water included in rent\n- Mail delivered directly to your\
+    \ suite\nAvailable  April 1st\n $1,395\n\nNo pets,  No smoking\nRental references\
+    \ required\nCall (250) 384-6179"
+  pets: false
+  price: 1395
+  smoking: false
+  title: ROCKLAND 1 bdm, 3rd floor
+  url: file://localhost/home/blake/Projects/dailyrentalads/tests/html/usedvictoria/well_formed.html
+  wanted: false
+- _id: file://localhost/home/blake/Projects/dailyrentalads/tests/html/usedvictoria/some_fields_missing.html
+  baths: '1.5'
+  beds: '3'
+  description: Available April 1st(early move in date negotiable)Hey! Need a place?
+    Come stay with us. Rent is 800$$ including utilities and internet. Looking for
+    a clean female to occupy one room in a 3 bedroom suite close to Tillicum and Gorge
+    The other two rooms are occupied by nice, clean and respectful working class females.
+    The main bathroom is shared with just one of the females and there is a large
+    general living room space and kitchen. *bus 11,8,9 are easily accessible and bus
+    26,22 are just a few blocks away. *parking off road on first come first serve
+    bases*Fairway market, Hecklers, Sharks club, CIBC and Dollarma are close by *No
+    smoking allowed inside* age group of tenants 24-27yrs * available long term SERIOUS
+    INQUIRIES ONLY - I can send more pictures of the house furnished to those that
+    are interested. -Please reply with a bit about yourself and how soon you are available
+    to rent. Also how long you will commit to! Due to COVID 19, -We expect you to
+    practice safe distancing during the viewing. -We can open up drawers and closets
+    for you to limit surfaces touched. -Viewings will be arranged via email Serious
+    enquiries only!! Atleast 6 months guaranteed stay preferred!
+  pets: null
+  price: 800
+  smoking: null
+  title: Room for rent
+  url: file://localhost/home/blake/Projects/dailyrentalads/tests/html/usedvictoria/some_fields_missing.html
+  wanted: false
