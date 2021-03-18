@@ -1,15 +1,12 @@
 import contextlib
-import re
+from dataclasses import asdict
 
 import scrapy
-from bs4 import BeautifulSoup
 from pymongo import MongoClient
 from pymongo.errors import DuplicateKeyError
 from scrapy.http import TextResponse
 
-from dailyrentalads.parsing import parse_title, sanitize_attr, boolify
-
-title_regex = re.compile(r"\$(\d+,?\d+)\W*(.*)")
+from dailyrentalads.parsing import parse_ad_page_html
 
 
 class RentalSpider(scrapy.Spider):
@@ -37,26 +34,9 @@ class RentalSpider(scrapy.Spider):
                 if self.db.rentals.find({"_id": link}, {"_id": 1}).count() == 0:
                     yield response.follow(link, callback=self.parse)
         else:
-            soup = BeautifulSoup(response.body)
-
-            unparsed_title = soup.find(class_="adshead").h1.text
-            price, title = parse_title(unparsed_title)
-
-            attrs_box = soup.find(id="useditem-attribute")
-
-            attrs = {sanitize_attr(k.text): boolify(v.text) for k, v in
-                     zip(attrs_box.find_all("h4"), attrs_box.find_all("span"))}
-
-            ad = {
-                "_id": response.url,
-                "url": response.url,
-                "title": title,
-                "price": price,
-                **attrs
-            }
-
+            ad = parse_ad_page_html(response.body)
             with contextlib.suppress(DuplicateKeyError):
-                self.db.rentals.insert_one(ad)
+                self.db.rentals.insert_one(asdict(ad))
                 yield ad
 
         next_page = response.css(".next a")
@@ -66,5 +46,4 @@ class RentalSpider(scrapy.Spider):
 
 
 if __name__ == '__main__':
-    print(parse_title("$1,900 · Newly renovated 2-Bedroom, 1-Bathroom suite"))
     ...

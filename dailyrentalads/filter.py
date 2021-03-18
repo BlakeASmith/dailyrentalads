@@ -6,11 +6,13 @@ from typing import Tuple, Iterable
 class RentalAd:
     url: str
     title: str
+    description: str
     price: int
     beds: float
     baths: float
     pets: bool
     smoking: bool
+    wanted: bool = False
     _id: str = None
 
     def __post_init__(self):
