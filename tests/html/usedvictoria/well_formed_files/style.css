@@ -1,0 +1,137 @@
+/*--------------------------------------------------//
+/$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$
+/$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$
+| $$  \ $$| $$  \__/| $$  \__/| $$  \__/
+| $$$$$$$$| $$ /$$$$| $$      |  $$$$$$
+| $$__  $$| $$|_  $$| $$       \____  $$
+| $$  | $$| $$  \ $$| $$    $$ /$$  \ $$
+| $$  | $$|  $$$$$$/|  $$$$$$/|  $$$$$$/
+|__/  |__/ \______/  \______/  \______/
+Developed with loving code by http://www.agcs.works
+For questions and support email info@agcs.works
+//--------------------------------------------------*/
+@font-face{
+    font-family:"ArtifaktLegendRegular";
+    src:url("ArtifaktLegendRegular.eot?#iefix");
+    src:url("ArtifaktLegendRegular.eot?#iefix") format("eot"),
+        url("ArtifaktLegendRegular.woff2") format("woff2"),
+        url("ArtifaktLegendRegular.woff") format("woff"),
+        url("ArtifaktLegendRegular.ttf") format("truetype"),
+        url("ArtifaktLegendRegular.svg#ArtifaktLegendRegular") format("svg");
+}
+@font-face{
+    font-family:"ArtifaktElementRegular";
+    src:url("ArtifaktElementRegular.eot?#iefix");
+    src:url("ArtifaktElementRegular.eot?#iefix") format("eot"),
+        url("ArtifaktElementRegular.woff2") format("woff2"),
+        url("ArtifaktElementRegular.woff") format("woff"),
+        url("ArtifaktElementRegular.ttf") format("truetype"),
+        url("ArtifaktElementRegular.svg#ArtifaktElementRegular") format("svg");
+}
+@font-face{
+    font-family:"ArtifaktLegendBold";
+    src:url("ArtifaktLegendBold.eot?#iefix");
+    src:url("ArtifaktLegendBold.eot?#iefix") format("eot"),
+        url("ArtifaktLegendBold.woff2") format("woff2"),
+        url("ArtifaktLegendBold.woff") format("woff"),
+        url("ArtifaktLegendBold.ttf") format("truetype"),
+        url("ArtifaktLegendBold.svg#ArtifaktLegendBold") format("svg");
+}
+html,body {
+    padding: 0;
+    margin: 0;
+}
+#container {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+.element {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hide {
+    opacity: 0;
+}
+#border {
+    opacity: 1;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    pointer-events: none;
+}
+
+#cta{
+    position: absolute;
+    top:15px;
+    left: auto;
+    right:10px; 
+    background-color: #3bbcad;
+}
+
+#ctaText {
+    position: relative;
+    display: inline-block;
+    padding: 5px 5px;
+/*    padding: 0px 5px;
+    line-height: 25px;
+    height: 25px;*/
+    font-family: "ArtifaktLegendRegular",Arial;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-align: left;
+}
+
+#arrow{
+	position: relative;
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    top: 3px;
+    padding: 2px 5px 2px 5px;
+}
+
+.headline{
+    position: absolute;
+    left: 10px;
+    bottom: 48px;
+    width: 280px;
+    height: auto;
+    color: #ffffff;
+    font-family: "ArtifaktLegendBold",Arial;
+    font-size: 24px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#credit{
+    position: absolute;
+    left: 5px;
+    top:auto;
+    bottom: 5px;
+    width: 290px;
+    height: auto;
+    color: #ffffff;
+    font-family: "ArtifaktLegendRegular",Arial;
+    font-size: 7px;
+    line-height: 9px;
+    text-align: center;
+}
+#bglayer {
+	width: 600px;
+}

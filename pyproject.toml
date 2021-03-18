@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dailyrentalads"
+version = "0.1.0"
+description = ""
+authors = ["Blake Smith <blakeinvictoria@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Scrapy = "^2.4.1"
+bs4 = "^0.0.1"
+pymongo = "^3.11.3"
+yagmail = "^0.14.245"
+keyring = "^23.0.0"
+schedule = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

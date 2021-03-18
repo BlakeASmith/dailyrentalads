@@ -1,0 +1,87 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.23
+*/
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+	width:100%;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	font-family:FontAwesome;
+	color: #4f2984;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 0.2em;
+	font-size: 2.5em;
+}
+/* Styling Pagination*/
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #4f2984;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: 1.5em;
+	width: 1em;
+	color: #FFF;
+	padding: 0em 0.2em;
+	font-size: 1.2em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	line-height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+.owl-carousel a img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    max-width:614px;
+}
+.owl-item, .owl-item a, .owl-item img, .owl-wrapper-outer, .owl-theme {
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-moz-tap-highlight-color:rgba(0,0,0,0);
+	-o-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
